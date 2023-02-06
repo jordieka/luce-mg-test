@@ -31,3 +31,12 @@ Each client can have multiple invoices. Each invoice can have multiple transacti
 
 # How to Test
 - Please use postman to import the collection and the environment to test the application 
+- Postman collection and env are send to the email
+
+# What I Implement
+- Create an integration service to Xero API (using Custom Configuration)
+- Integrate sytem to the Xero API
+- Add new fields on Invoice and Transaction to store the unique ID for Xero created InvoiceID and LineItemsID
+- Connecting updated data on transaction for invoice amount
+- Update Xero data after Invoice change
+- Env data for Xero stored in .env   
