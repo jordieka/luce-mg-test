@@ -1,0 +1,42 @@
+# == Schema Information
+#
+# Table name: invoices
+#
+#  id              :integer          not null, primary key
+#  amount          :float
+#  due_date        :date
+#  issue_date      :date
+#  paid_amount     :float
+#  payment_status  :string
+#  status          :string
+#  created_at      :datetime         not null
+#  updated_at      :datetime         not null
+#  client_id       :integer          not null
+#  xero_invoice_id :string
+#
+# Indexes
+#
+#  index_invoices_on_client_id  (client_id)
+#
+# Foreign Keys
+#
+#  client_id  (client_id => clients.id)
+#
+
+one:
+  status: MyString
+  payment_status: MyString
+  amount: 1.5
+  paid_amount: 1.5
+  issue_date: 2021-09-04
+  due_date: 2021-09-04
+  client: one
+
+two:
+  status: MyString
+  payment_status: MyString
+  amount: 1.5
+  paid_amount: 1.5
+  issue_date: 2021-09-04
+  due_date: 2021-09-04
+  client: two
